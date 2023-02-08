@@ -1,6 +1,6 @@
 @echo off
-set commitName="Update boom-calendar"
-set prTitle="Update boom-calendar"
+set commitName="Update boom-calendar and boom-components"
+set prTitle="Update boom-calendar and boom-components"
 
 call npm i is-prime
 
