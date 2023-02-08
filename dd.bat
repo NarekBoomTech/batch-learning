@@ -10,3 +10,4 @@ git commit -m %commitName%
 git push
 gh pr create -t %prTitle% -b ""
 gh pr merge
+
