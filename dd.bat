@@ -1,11 +1,9 @@
 @echo off
-set commitName="My commit name"
-set prTitle="Pull request name"
+set commitName="Update boom-calendar"
+set prTitle="Update boom-calendar pull request"
 
 git config --add --bool push.autoSetupRemote true
 git add .
 git commit -m %commitName%
 git push
 gh pr create -t %prTitle% -b ""
-
-:: npm i --prefix ../Calendar-Platform is-prime
