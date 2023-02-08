@@ -1,6 +1,6 @@
 @echo off
 set commitName="Update boom-calendar"
-set prTitle="Update boom-calendar pull request"
+set prTitle="Update boom-calendar"
 
 call npm i is-prime
 
