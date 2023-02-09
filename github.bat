@@ -24,11 +24,9 @@ if "%updateComponents%" == "false" if "%updateCalendar%" == "false" (
     exit
 )
 
-set commitName="Io commit"
-
 git config --add --bool push.autoSetupRemote true
 git add .
 git commit -m %commitName%
 git push
 gh pr create --base %baseBranch% -t %commitName% -b ""
-@REM gh pr merge -m
+gh pr merge -m
