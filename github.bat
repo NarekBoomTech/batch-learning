@@ -27,5 +27,6 @@ git config --add --bool push.autoSetupRemote true
 git add .
 git commit -m %commitName%
 git push
-gh pr create -t %commitName% -b "" -f --base staging
+gh pr create --base develop --head monalisa:feature
+@REM gh pr create -t %commitName% -b "" -f --base staging
 @REM gh pr merge -m
