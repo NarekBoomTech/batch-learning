@@ -29,4 +29,4 @@ git add .
 git commit -m %commitName%
 git push
 gh pr create --base %baseBranch% -t %commitName% -b ""
-@REM gh pr merge -m
+gh pr merge -m
