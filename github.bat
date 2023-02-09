@@ -27,5 +27,5 @@ git config --add --bool push.autoSetupRemote true
 git add .
 git commit -m %commitName%
 git push
-gh pr create -t %commitName% -b "" -f -B VGP-1
-gh pr merge -m
+gh pr create -t %commitName% -b "" -f -B staging
+@REM gh pr merge -m
