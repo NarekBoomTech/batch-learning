@@ -27,5 +27,5 @@ git config --add --bool push.autoSetupRemote true
 git add .
 git commit -m %commitName%
 git push
-gh pr create -t %commitName% -b ""
+gh pr create -t %commitName% -b "" -f
 gh pr merge -m
