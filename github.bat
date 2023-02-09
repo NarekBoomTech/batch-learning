@@ -2,6 +2,7 @@
 
 set "updateComponents=true"
 set "updateCalendar=true"
+set baseBranch="staging"
 
 if "%updateComponents%" == "true" if "%updateCalendar%" == "true" (
     ::call npm update boom-components boom-calendar
@@ -23,10 +24,11 @@ if "%updateComponents%" == "false" if "%updateCalendar%" == "false" (
     exit
 )
 
+set commitName="Test 2"
+
 git config --add --bool push.autoSetupRemote true
 git add .
 git commit -m %commitName%
 git push
-gh pr create --base staging -t %commitName% -b ""
-@REM gh pr create -t %commitName% -b "" -f --base staging
-@REM gh pr merge -m
+gh pr create -t %commitName% -b ""
+gh pr merge -m
