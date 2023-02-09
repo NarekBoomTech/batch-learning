@@ -27,5 +27,5 @@ git config --add --bool push.autoSetupRemote true
 git add .
 git commit -m %commitName%
 git push
-gh pr create -t %commitName% -b "" -f -B "staging"
+gh pr create -t %commitName% -b "" -f --body "staging"
 @REM gh pr merge -m
